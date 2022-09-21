@@ -1,8 +1,9 @@
-var n, l:integer;
+var
+  n, l: integer;
 
 begin
-  n:=31;
-  l:=4;
-  for var i:=5 to 100 do 
+  n := 31;
+  l := 4;
+  for var i := 5 to 100 do 
     if n mod i = l then print(i);  
 end.
