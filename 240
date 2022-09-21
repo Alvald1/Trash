@@ -1,0 +1,14 @@
+var
+  num: Biginteger;
+  cnt: integer;
+
+begin
+  num := (729bi ** 41 - 81bi ** 16) * (729bi ** 15 + 9bi ** 5);  
+  cnt := 0;
+  while num > 0 do
+  begin
+    if num mod 9 = 0 then inc(cnt);
+    num := num div 9;
+  end;
+  print(cnt); 
+end.
