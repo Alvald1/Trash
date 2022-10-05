@@ -1,0 +1,20 @@
+var
+  n: integer;
+
+begin
+  n := 338;
+  for var p := 100 downto 3 do
+  begin
+    var tmp := n;
+    var cnt := 0;
+    while tmp > 0 do
+    begin
+      tmp := tmp div p;
+      inc(cnt);
+    end;
+    if (cnt = 3) and (n mod p = 2) then begin
+      print(p);
+      break;
+    end;
+  end; 
+end.
