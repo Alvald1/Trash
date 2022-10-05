@@ -1,0 +1,7 @@
+##
+for var x := 0 to 16 do
+begin
+  if (9 * 17bi ** 4 + 7 * 17bi ** 3 + 5 * 17bi** 2 + 9 * 17bi+ x + 3 * 17bi** 4 + x * 17bi** 3 + 17bi** 2 + 8) mod 11 = 0 then begin
+    print((9 * 17bi** 4 + 7 * 17bi** 3 + 5 * 17bi** 2 + 9 * 17bi+ x + 3 * 17bi** 4 + x * 17bi** 3 + 17bi** 2 + 8) div 11);
+  end;
+end; 
