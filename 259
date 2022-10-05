@@ -1,0 +1,26 @@
+var
+  n, sum: integer;
+  flag, flag2: boolean;
+
+begin
+  n := 78;
+  sum := 0;
+  for var p := 2 to 10 do
+  begin
+    var tmp := n;
+    flag := odd(tmp mod p);
+    flag2 := true;
+    tmp := tmp div p;
+    while tmp > 0 do
+    begin
+      if odd(tmp mod p) = flag then begin
+        flag2 := false;
+        break;
+      end;
+      flag := not flag;
+      tmp := tmp div p;
+    end;  
+    if flag2 then sum := sum + p;
+  end;
+  print(sum);
+end.
