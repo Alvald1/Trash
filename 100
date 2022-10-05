@@ -1,0 +1,13 @@
+var
+  n, cnt: biginteger;
+
+begin
+  n := 8bi ** 2341 - 4bi ** 342 + 2bi ** 620 - 81;
+  cnt := 0;
+  while n > 0 do
+  begin
+    cnt := cnt + (n mod 2);
+    n := n div 2;
+  end;
+  print(cnt);
+end.
