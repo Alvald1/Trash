@@ -1,0 +1,15 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+	int cnt = 1;
+	for (int i = 161; i < 17 * 1000000; i += 161) {
+		string s = to_string(i);
+		if (s.find("1") < s.size() - 4 && s.find("68") < s.size() && s.find("68") - s.find("1") > 2) {
+			cout << cnt << " - " << i << ' ' << i / 161 << '\n';
+			++cnt;
+		}
+	}
+	return 0;
+}
